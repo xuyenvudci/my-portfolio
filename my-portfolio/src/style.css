@@ -1,0 +1,263 @@
+:root {
+  --navColor: rgb(240, 236, 236);
+  --color1: rgba(94, 196, 236, 0.63);
+  --navlisize: 20px 20px;
+  --navlipad: 10px 35px
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#app {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--navColor);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.avatar {
+  width: 120px;
+  /* Adjust the size as needed */
+  height: 120px;
+  /* Ensure the width and height are equal */
+  border-radius: 50%;
+  /* Makes the image circular */
+  object-fit: cover;
+  /* Ensures the image fits within the circle */
+  border: 5px solid white;
+  /* Adds a white border around the image */
+  margin-bottom: 2em;
+
+}
+
+b {
+  text-align: center;
+  font-size: 2em;
+
+}
+
+.home {
+  padding: 2em;
+  
+}
+
+.a1, .a2{
+  text-decoration: none;
+  border: 1px solid black;
+  padding: .5em 2em;
+  margin:1em;
+  border-radius: 30px;
+  background-color: plum;
+  color:white;
+}
+
+.a2{
+  background-color: black;
+  color: rgb(141, 186, 245)
+}
+
+.skills {
+  background-color: var(--color1);
+  padding: 2em;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+
+}
+
+.resume {
+  padding: 2em;
+}
+
+.resumeStructure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1em
+}
+
+.projects {
+  background-color: var(--color1);
+  padding: 2em;
+}
+
+.sortiment {
+  display: flex;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 1em;
+  margin: 1em auto;
+  gap: 1em;
+  background-color: aliceblue;
+  border-radius: 30px;
+  a{
+    text-decoration: none;
+    color: blue;
+  }
+
+}
+
+.listProject {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+
+  div {
+    border: 1px solid gray;
+    width: 30vw;
+    height: 25vh;
+
+  }
+}
+
+.contact {
+  padding: 2em;
+}
+
+ul li {
+  list-style: none;
+  a {text-decoration: none;}
+}
+
+
+.nav1 li:nth-child(1) {
+  background: url(./public/house.png) no-repeat left center;
+  background-size: var(--navlisize);
+  padding: var(--navlipad);
+}
+
+.nav1 li:nth-child(2) {
+  background: url(./public/profile.png) no-repeat left center;
+  background-size: var(--navlisize);
+  padding: var(--navlipad);
+}
+
+.nav1 li:nth-child(3) {
+  background: url(./public/resume.png) no-repeat left center;
+  background-size: var(--navlisize);
+  padding: var(--navlipad);
+}
+
+.nav1 li:nth-child(4) {
+  background: url(./public/project.png) no-repeat left center;
+  background-size: var(--navlisize);
+  padding: var(--navlipad);
+}
+
+.nav1 li:nth-child(5) {
+  background: url(./public/contact.png) no-repeat left center;
+  background-size: 20px 20px;
+  padding: 10px 35px;
+}
+
+.iconContact {
+  width: 30px;
+  height: 30px;
+}
+
+.nav1{
+  margin-left: -2.5em;
+}
+.nav2 {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: center;
+  margin-left: -2.5em;
+}
+
+.iconSkill1 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(238, 110, 110);
+  padding: 1em;
+  border: 1px solid rgb(238, 110, 110);
+  border-radius: 15px;
+}
+
+.iconSkill2 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(111, 165, 31);
+  padding: 1em;
+  border: 1px solid rgb(31, 92, 7);
+  border-radius: 15px;
+}
+
+.iconSkill3 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(230, 165, 243);
+  padding: 1em;
+  border: 1px solid  rgb(230, 165, 243);
+  border-radius: 15px;
+}
+
+.iconSkill4 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(71, 182, 216);
+  padding: 1em;
+  border: 1px solid rgb(71, 182, 216);
+  border-radius: 15px;
+}
+
+.iconSkill5 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(236, 182, 102);
+  padding: 1em;
+  border: 1px solid rgb(236, 182, 102);
+  border-radius: 15px;
+}
+
+.tech1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border:1px solid gray;
+  border-radius: 15px;
+  gap: 1em;
+  padding: 1em;
+  width: 32vw;
+}
+
+.techChild1{
+  display: flex;
+  gap: 1em;
+}
+
+.techChild2{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap:2em
+}
+
+.p1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .3em;
+}
